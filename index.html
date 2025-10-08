@@ -1,36 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HOTECH - DITO</title>
-    <style>
-        html, body {
-            margin: 0;
-            padding: 0;
-            height: 100%; /* Ensure html and body take full height */
-            overflow: hidden; /* Prevent scrollbars from body */
-            font-family: Arial, sans-serif;
-            background-color: #f0f0f0; /* Optional: light background */
-        }
-        iframe {
-            display: block;
-            width: 100vw;   /* Full viewport width */
-            height: 100vh;  /* Full viewport height */
-            border: none;   /* No border for a seamless look */
-            position: absolute; /* Position to fill the viewport */
-            top: 0;
-            left: 0;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" 
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>HOTECH - DITO</title>
+  <style>
+    /* ✅ Reset & Base Styles */
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      width: 100%;
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+      overflow: hidden; /* Prevent double scrollbars */
+    }
+
+    /* ✅ Responsive iframe container */
+    iframe {
+      position: fixed;      /* Ensures it always fills the screen */
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      border: none;
+    }
+
+    /* ✅ Optional: Improve look on smaller screens */
+    @media (max-width: 768px) {
+      iframe {
+        height: 100vh; /* Still full height */
+      }
+    }
+
+    @media (max-width: 480px) {
+      iframe {
+        height: 100vh;
+      }
+    }
+  </style>
 </head>
 <body>
 
-    <iframe
-      src="https://script.google.com/macros/s/AKfycbwWDUI-Idn5ZSZZW2o7YPgY0Mpuk_wZcZSlmd2I5QYdtL76nZSWTbkQLoe9EFRFyfTe/exec"
-      frameborder="0"
-      allowfullscreen
-    ></iframe>
+  <iframe
+    src="https://script.google.com/macros/s/AKfycbwWDUI-Idn5ZSZZW2o7YPgY0Mpuk_wZcZSlmd2I5QYdtL76nZSWTbkQLoe9EFRFyfTe/exec"
+    frameborder="0"
+    allowfullscreen
+  ></iframe>
 
 </body>
 </html>
